@@ -33,81 +33,105 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications">Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
+				   <!-- <li><a href="index.html">Home</a></li>
+				  <li><a href="#publications">Publications</a></li>
+				   <li><a href="#">CV</a></li>  -->
 		  </ul>
 		</div>
 	  </div>
 	</nav>
-  
+
+
+
+
   <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
             <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					
-					<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="col-md-9" style="height: 5vh;">
+
+
+              <h2 id="research">About</h2>
+                <div style="margin-top:3%; text-align:justify; max-width:600px;">
+					<p style="margin-bottom:1cm;">
+            My research is focused on statistical learning theory and machine learning.
+            In particular, I work on information-theoretic and PAC-Bayesian generalization bounds,
+            and the application of these bounds to neural networks and meta learning.<br><br>
+            I am currently a PhD student in the Communication Systems group in the Department of Electrical Engineering at Chalmers University of Technology, supervised by <a href="https://gdurisi.github.io/">Giuseppe Durisi</a>.
+            Prior to this, I studied Physics at the University of Gothenburg.
+
+
+
                 </div>
-            </div> 
+
+
+                <h2 id="publications">Publications</h2>
+
+                <div style="margin-top:3%; text-align:left;">
+
+                <ul>
+                <li class="paper" words="meta learning, generalization"><strong>Evaluated CMI Bounds for Meta Learning: Tightness and Expressiveness</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>.  <a href="https://arxiv.org/abs/2210.06511">[arXiv]</a></li>
+                </ul>
+                <ul>
+                <li class="paper" words="information theoretic, generalization"><strong>New Family of Generalization Bounds Using Samplewise Evaluated CMI</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>.  <a href="https://arxiv.org/abs/2210.06422">[arXiv]</a></li>
+                </ul>
+                <ul>
+                <li class="paper" words="information theoretic, generalization"><strong>Data-Dependent PAC-Bayesian Bounds in the Random-Subset Setting with Applications to Neural Networks</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>ICML ITR3 2021</i>.  <a href="https://drive.google.com/file/d/1mIiN6vOIgeCMqTXewv-nEVRtxBbRAN8I/view?usp=sharing">[Available]</a></li>
+                </ul>
+                <ul>
+                <li class="paper" words="information theoretic, generalization"><strong>Fast-rate loss bounds via conditional information measures with applications to neural networks</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2021</i>.  <a href="https://arxiv.org/abs/2010.11552">[arXiv]</a></li>
+                </ul>
+                <ul>
+                <li class="paper" words="information theoretic, generalization"><strong>Generalization bounds via information density and conditional information density</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>JSAIT 2020</i>.  <a href="https://arxiv.org/abs/2005.08044">[arXiv]</a>. <strong> Note</strong>: <a href="https://gdurisi.github.io/files/2021/jsait-correction.pdf">correction</a> available.</li>
+                </ul>
+                <ul>
+                <li class="paper" words="information theoretic, generalization"><strong>Generalization error bounds via <i>m</i>th central moments of the information density</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2020</i>.  <a href="https://arxiv.org/abs/2004.09148">[arXiv]</a></li>
+                </ul>
+                <ul>
+                <li class="paper" words="dark matter, phenomenology"><strong>New constraints on inelastic dark matter from IceCube</strong><br>
+                  Riccardo Catena, Fredrik Hellström. <i>JCAP 2018</i>.  <a href="https://arxiv.org/abs/1808.08082">[arXiv]</a></li>
+                </ul>
+
+            </div>
+            </div>
 
             <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>John Doe</b></div><br>
-                <p><b>john at doe.com</b><br>
-                <p>Random Department<br>
-                University of Randomness<br>
-                Street<br>
-                City <br>
-                Country<br>
+            <div class="col-md-3">
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Fredrik Hellström</b></div><br>
+
+                  <!-- Main Image -->
+                  <img class="img-responsive" src="hellstromcropcircle1.png" width = "200" alt=""><br>
+                <p><b>frehells&#128012;chalmers.se</b><br>
+                PhD student<br>
+                Chalmers University of Technology<br>
+                Gothenburg, Sweden <br>
                 </p>
-            </div>
-            
-            
             <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd> 
-              <dd><a href="#">Twitter</a></dd>
-              <dd><a href="#">LinkedIn</a></dd>
-            </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
+                  <dd><a href="https://scholar.google.com/citations?user=zTJcV04AAAAJ">Google Scholar</a></dd>
+                  <dd><a href="https://twitter.com/FrHellstrom">Twitter</a></dd>
+                  <dd><a href="https://www.linkedin.com/in/kfu-hellstrom/">LinkedIn</a></dd>
+                  <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Site template  </a>
+
             </div>
 
-            
+
+
         </div>
 
 
     </div>
     <!-- /.container -->
-    
+
     <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-    
+
 </body>
 
 </html>
