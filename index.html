@@ -13,6 +13,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
         .page-content {
             display: flex;
@@ -32,12 +33,38 @@
             flex-direction: column;
             align-items: flex-start;
         }
-        .profile-photo {
+        .profile-photo-container {
+            position: relative;
             width: 120px;
             height: 120px;
+            margin-top: 15px;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             border-radius: 15%;
             object-fit: cover;
-            margin-top: 15px;
+            transition: opacity 0.21s ease-in-out;
+        }
+
+        #profile-photo-light {
+            opacity: 1;
+        }
+
+        #profile-photo-dark {
+            opacity: 0;
+        }
+
+        body.dark-mode #profile-photo-light {
+            opacity: 0;
+        }
+
+        body.dark-mode #profile-photo-dark {
+            opacity: 1;
         }
         .social-icons {
             margin-top: 10px;
@@ -68,14 +95,74 @@
         li {
             padding-bottom: 10px;
         }
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 5px;
+            color: #333;
+            text-decoration: none;
+        }
+        .icon-link:hover {
+            color: #FF8C00;
+        }
+        .icon-link svg, .icon-link .fas, .icon-link .fab {
+            width: 16px;
+            height: 16px;
+            margin-right: 2px;
+        }
+        #dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: transparent;
+            color: #333;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: color 0.54s;
+        }
+        #dark-mode-toggle:hover {
+            color: #FF8C00;
+        }
+        
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #424242;
+            color: #f0f0f0;
+        }
+        .dark-mode h1, .dark-mode h2 {
+            color: #f0f0f0;
+        }
+        .dark-mode .social-icons a, .dark-mode .icon-link {
+            color: #f0f0f0;
+        }
+        .dark-mode .social-icons a:hover, .dark-mode .icon-link:hover {
+            color: #FF8C00;
+        }
+        .dark-mode h2 {
+            border-bottom-color: #444;
+        }
+        .dark-mode #dark-mode-toggle {
+            color: #f0f0f0;
+        }
+        .dark-mode #dark-mode-toggle:hover {
+            color: #FF8C00;
+        }
     </style>
 </head>
 <body>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
     <div class="page-content">
         <aside class="profile-section">
             <div class="header-content">
                 <h1>Fredrik Hellström</h1>
-                <img src="files/profile.JPG" alt="Fredrik Hellström" class="profile-photo">
+                <div class="profile-photo-container">
+                    <img src="files/profile.JPG" alt="Fredrik Hellström" class="profile-photo" id="profile-photo-light">
+                    <img src="files/profiledark.JPG" alt="Fredrik Hellström" class="profile-photo" id="profile-photo-dark">
+                </div>
                 <p><b><a style="color:#FF8C00;" href="mailto:f.hellstrom@ucl.ac.uk">f.hellstrom&#9917;ucl.ac.uk</a></b><br>
                    Postdoctoral researcher<br>
                    University College London (UCL)<br>
@@ -97,8 +184,8 @@
 
         <p>My research is focused on statistical learning theory and machine learning. This includes generalization bounds (mainly of the information-theoretic variety); the application of such bounds in various settings; conformal prediction; online learning; and active learning.</p>
 
-        <p> I am currently a postdoc at University College London Centre for Artificial Intelligence, advised by Benjamin Guedj and supported by <a href="https://wasp-sweden.org/">WASP</a>.
-            Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.</p>
+        <p> I am currently a postdoc at University College London Centre for Artificial Intelligence, advised by Benjamin Guedj and supported by <a style="color:#FF8C22;" href="https://wasp-sweden.org/">WASP</a>.
+            Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a style="color:#FF8C22;" href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.</p>
 
         
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -208,7 +295,25 @@
       </section>
 </main>
 
-    </div>
+ </div>
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        const icon = darkModeToggle.querySelector('i');
+        const profilePhotoLight = document.getElementById('profile-photo-light');
+        const profilePhotoDark = document.getElementById('profile-photo-dark');
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
     <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
