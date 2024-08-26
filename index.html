@@ -1,76 +1,101 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fredrik Hellström</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <!-- Add Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredrik Hellström - Academic Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .profile-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    border-radius: 10%; /* Makes the image circular */
-    object-fit: cover;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-  .social-icons {
-    margin-top: 0px;
-  }
-  .social-icons a {
-    margin-right: 10px;
-    color: #333;
-    text-decoration: none;
-  }
-  .social-icons a:hover {
-    color: #FF8C00;
-  }
-  .x-icon {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-  }
-</style>
-
-<header>
-  <div class="header-content">
-    <h1>Fredrik Hellström</h1>
-    <img src="files/profile.jpg" alt="Fredrik Hellström" class="profile-photo">
-    <p><b><a style="color:#FF8C00;" href="mailto:f.hellstrom@ucl.ac.uk">f.hellstrom&#9917;ucl.ac.uk</a></b><br>
-       Postdoctoral researcher<br>
-       University College London (UCL)<br>
-       London, United Kingdom</p>
-    <div class="social-icons">
-      <a href="https://scholar.google.com/citations?user=Yhsglh4AAAAJ&" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-      <a href="https://www.linkedin.com/in/kfu-hellstrom/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/FrHellstrom" target="_blank" title="X (Twitter)">
-        <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
-        </svg>
-      </a>
-    </div>
-  </div>
-</header>
-
-
-
-
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page-content {
+            display: flex;
+            gap: 40px;
+        }
+        .profile-section {
+            flex: 1;
+            max-width: 300px;
+            min-width: 200px;
+        }
+        .publications-section {
+            flex: 2;
+            max-width: 670px;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 15%;
+            object-fit: cover;
+            margin-top: 15px;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #FF8C00;
+        }
+        .x-icon {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-content">
+        <aside class="profile-section">
+            <div class="header-content">
+                <h1>Fredrik Hellström</h1>
+                <img src="files/profile.JPG" alt="Fredrik Hellström" class="profile-photo">
+                <p><b><a style="color:#FF8C00;" href="mailto:f.hellstrom@ucl.ac.uk">f.hellstrom&#9917;ucl.ac.uk</a></b><br>
+                   Postdoctoral researcher<br>
+                   University College London (UCL)<br>
+                   London, United Kingdom</p>
+                <div class="social-icons">
+                    <a href="https://scholar.google.com/citations?user=Yhsglh4AAAAJ&" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://www.linkedin.com/in/kfu-hellstrom/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/FrHellstrom" target="_blank" title="X (Twitter)">
+                        <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        
+        <main class="publications-section">
 <section>
 
-        <p>My research is focused on statistical learning theory and machine learning. In particular, I work on generalization bounds (in particular of the information-theoretic variety); the application of such bounds to neural networks and meta learning; conformal prediction; and online learning and active learning.</p>
+        <p>My research is focused on statistical learning theory and machine learning. In particular, I work on generalization bounds (in particular of the information-theoretic variety); the application of such bounds to neural networks and meta learning; conformal prediction; online learning; and active learning.</p>
 
         <p> I am currently a postdoc at University College London Centre for Artificial Intelligence, advised by Benjamin Guedj and supported by <a href="https://wasp-sweden.org/">WASP</a>.
             Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.</p>
@@ -128,22 +153,22 @@
               <a href="https://arxiv.org/abs/2310.10534" class="icon-link" title="arXiv">
                 <svg><use href="#arxiv-icon"/></svg>
               </a> 
-              <a href="https://virtual.aistats.org/virtual/2024/poster/6593" class="icon-link" title="AISTATS"><i class="fas fa-chalkboard-user"></i></a>
+              <a href="https://virtual.aistats.org/virtual/2024/poster/6593" class="icon-link" title="AISTATS"><i class="fas fa-chalkboard"></i></a>
   </li>
           <li><strong>Adaptive Selective Sampling for Online Prediction with Experts</strong><br>
                     Rui M. Castro, Fredrik Hellström, Tim van Erven. <i>NeurIPS 2023</i>. 
                     <a href="https://arxiv.org/abs/2302.08397" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
-                    <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard"></i></a> 
                     <a href="https://neurips.cc/virtual/2023/poster/72851" title="Video"><i class="icon-link" class="fas fa-video"></i></a></li>
           <li><strong>Evaluated CMI Bounds for Meta Learning: Tightness and Expressiveness</strong><br>
                   Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>. 
                   <a href="https://arxiv.org/abs/2210.06511" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
-                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard"></i></a> 
                   <a href="https://slideslive.com/38990218/evaluated-cmi-bounds-for-meta-learning-tightness-and-expressiveness?ref=speaker-112652" class="icon-link" title="Video"><i class="fas fa-video"></i></a></li>
           <li><strong>New Family of Generalization Bounds Using Samplewise Evaluated CMI</strong><br>
                   Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>. 
                   <a href="https://arxiv.org/abs/2210.06422" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
-                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/41b6674c28a9b93ec8d22a53ca25bc3b-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/41b6674c28a9b93ec8d22a53ca25bc3b-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard"></i></a> 
                   <a href="https://slideslive.com/38990222/a-new-family-of-generalization-bounds-using-samplewise-evaluated-cmi?ref=speaker-112652" class="icon-link"  title="Video"><i class="fas fa-video"></i></a></li>
           <li><strong>Fast-rate loss bounds via conditional information measures with applications to neural networks</strong><br>
                   Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2021</i>. 
@@ -181,9 +206,8 @@
         </ul>
 
       </section>
-      <footer>
-        <p style=color:#D3D3D3><small>Based on a theme by <a style=color:#DABDAB; href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+</main>
+
     </div>
     <script src="javascripts/scale.fix.js"></script>
   </body>
