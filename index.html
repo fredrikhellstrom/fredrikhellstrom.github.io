@@ -1,174 +1,190 @@
-<!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Fredrik Hellström</title>
 
-<html lang="en">
-<head>
-  <title>Fredrik Hellström</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-</head>
-<body style="background-color:#FFFFFF">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 10%; /* Makes the image circular */
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .social-icons {
+    margin-top: 0px;
+  }
+  .social-icons a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  .social-icons a:hover {
+    color: #FF8C00;
+  }
+  .x-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+</style>
 
-
-  <!-- Navigation -->
-  	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  	  <div class="container">
-  		<div class="navbar-header">
-  		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-  						<span class="sr-only">Toggle navigation</span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  					</button>
-  		</div>
-
-  		<!-- Collect the nav links, forms, and other content for toggling -->
-  		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  		  <ul class="nav navbar-nav">
-  				    <li><a href="index.html">Home</a></li>
-  				  <li><a href="#publications">Publications</a></li>
-  				   <li><a href="wasp-proj.html">INNER</a></li>
-  		  </ul>
-  		</div>
-  	  </div>
-  	</nav>
-
-
-
-
-  <!-- Page Content -->
-    <div class="container">
-
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-9" style="height: 7vh;">
-
-
-              <h3 id="research">About</h3>
-                <div style="margin-top:1%; text-align:justify; max-width:635px;">
-					<p style="margin-bottom:1cm; margin-left:00px">
-            My research is focused on statistical learning theory and machine learning.
-            In particular, I work on generalization bounds (in particular of the information-theoretic variety); the application of such bounds to neural networks and meta learning; as well as online learning and active learning.<br><br>
-            I am currently a postdoc at University College London Centre for Artificial Intelligence, advised by Benjamin Guedj and supported by <a href="https://wasp-sweden.org/">WASP</a>.
-            Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.
-            Feel free to reach out in case you want to chat about any of this!
-
-            <br><br>
-            A more detailed description of the WASP project <i>INNER: information theory of deep neural networks</i> that I participated in during my PhD is available <a href="wasp-proj.html"><i>here</i></a>.
-
-
-
-                </div>
-
-
-                <h3 id="preprints">Preprints</h3>
-
-                <div style="margin-top:2%; margin-left:-30px; text-align:left;">
-                <ul>
-                <li class="paper" words="information theoretic, generalization, monograph"><strong>Generalization Bounds: Perspectives from Information Theory and PAC-Bayes</strong><br>
-                    Fredrik Hellström, Giuseppe Durisi, Benjamin Guedj, Maxim Raginsky. <i>Preprint, 2023</i>.  <a href="https://arxiv.org/abs/2309.04381">[arXiv]</a></li>
-                </ul>
-                </div>
-
-                <h3 id="publications">Conference and journal papers</h3>
-
-                <div style="margin-top:2%; margin-left:-30px; text-align:left;">
-                <ul>
-                <li class="paper" words="conformal prediction, generalization"><strong>Generalization and Informativeness of Conformal Prediction</strong><br>
-                        Matteo Zecchin, Sangwoo Park, Osvaldo Simeone, Fredrik Hellström. <i>ISIT, 2024</i>.  <a href="https://arxiv.org/abs/2401.11810">[arXiv]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Comparing Comparators in Generalization Bounds</strong><br>
-                      Fredrik Hellström, Benjamin Guedj. <i>AISTATS, 2024</i>.  <a href="https://arxiv.org/abs/2310.10534">[arXiv]</a>, <a href="https://virtual.aistats.org/virtual/2024/poster/6593">[AISTATS]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="online learning, active learning"><strong>Adaptive Selective Sampling for Online Prediction with Experts</strong><br>
-                    Rui M. Castro, Fredrik Hellström, Tim van Erven. <i>NeurIPS 2023</i>.  <a href="https://arxiv.org/abs/2302.08397">[arXiv]</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html">[NeurIPS]</a>, <a href="https://neurips.cc/virtual/2023/poster/72851">[Video]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="meta learning, generalization"><strong>Evaluated CMI Bounds for Meta Learning: Tightness and Expressiveness</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>.  <a href="https://arxiv.org/abs/2210.06511">[arXiv]</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html">[NeurIPS]</a>, <a href="https://slideslive.com/38990218/evaluated-cmi-bounds-for-meta-learning-tightness-and-expressiveness?ref=speaker-112652">[Video]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>New Family of Generalization Bounds Using Samplewise Evaluated CMI</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>.  <a href="https://arxiv.org/abs/2210.06422">[arXiv]</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/41b6674c28a9b93ec8d22a53ca25bc3b-Abstract-Conference.html">[NeurIPS]</a>, <a href="https://slideslive.com/38990222/a-new-family-of-generalization-bounds-using-samplewise-evaluated-cmi?ref=speaker-112652">[Video]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Fast-rate loss bounds via conditional information measures with applications to neural networks</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2021</i>.  <a href="https://arxiv.org/abs/2010.11552">[arXiv]</a>, <a href="https://ieeexplore.ieee.org/document/9517731">[IEEE]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Generalization bounds via information density and conditional information density</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i>JSAIT 2020</i>.  <a href="https://arxiv.org/abs/2005.08044">[arXiv]</a>, <a href="https://ieeexplore.ieee.org/document/9277617">[IEEE]</a>. <strong> Note</strong>: <a href="https://gdurisi.github.io/files/2021/jsait-correction.pdf">correction</a> available.</li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Generalization error bounds via <i>m</i>th central moments of the information density</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2020</i>.  <a href="https://arxiv.org/abs/2004.09148">[arXiv]</a>, <a href="https://ieeexplore.ieee.org/abstract/document/9174475">[IEEE]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="dark matter, phenomenology"><strong>New constraints on inelastic dark matter from IceCube</strong><br>
-                  Riccardo Catena, Fredrik Hellström. <i>JCAP 2018</i>.  <a href="https://arxiv.org/abs/1808.08082">[arXiv]</a>, <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2018/10/039">[IOP]</a></li>
-                </ul>
-                </div>
-
-                <h3 id="other">Other</h3>
-
-                <div style="margin-top:2%; margin-left:-30px; text-align:left;">
-
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Information-Theoretic Generalization Bounds: Tightness and Expressiveness</strong><br>
-                    Fredrik Hellström. <i>PhD Thesis, 2023</i>.  <a href="https://research.chalmers.se/en/publication/533822">[Available]</a></li>
-                </ul>
-                <ul>
-                <li class="paper" words="information theoretic, generalization"><strong>Data-Dependent PAC-Bayesian Bounds in the Random-Subset Setting with Applications to Neural Networks</strong><br>
-                  Fredrik Hellström, Giuseppe Durisi. <i> Workshop on Information-Theoretic Methods for Rigorous, Responsible, and Reliable Machine Learning (ITR3) at ICML 2021</i>.  <a href="files\data-dependent-pac-bayesian-bounds-in-the-random-subset-setting.pdf">[Available]</a></li>
-                </ul>
-
-                <br>
-                <br>
-                <br>
-            </div>
-          </p>
-            </div>
-
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-3">
-                <div style="font-family: 'Helvetica', sans-serif; font-size: 30px;">Fredrik Hellström</div><br>
-                  <!-- Main Image -->
-                  <img class="img-responsive" src="hellstromcropcircletransp.png" width = "200" alt=""><br>
-                <p><b>f.hellstrom&#9917;ucl.ac.uk</b><br>
-                Fredrik Hellström<br>
-                University College London<br>
-                London, United Kingdom <br>
-                </p>
-            <!-- Links on the Sidebar -->
-                  <dd><a href="https://scholar.google.com/citations?user=Yhsglh4AAAAJ&">Google Scholar</a></dd>
-                  <dd><a href="https://twitter.com/FrHellstrom">Twitter</a></dd>
-                  <!--<dd><a href="https://www.linkedin.com/in/kfu-hellstrom/">LinkedIn</a></dd> -->
-                  <a style="color:#5A5A5A;font-size:0.7em; float:right;" href="https://github.com/mavroudisv/plain-academic">Site template  </a>
-
-            </div>
-
-
-
-        </div>
-
-
+<header>
+  <div class="header-content">
+    <h1>Fredrik Hellström</h1>
+    <img src="files/profile.jpg" alt="Fredrik Hellström" class="profile-photo">
+    <p><b><a style="color:#FF8C00;" href="mailto:f.hellstrom@ucl.ac.uk">f.hellstrom&#9917;ucl.ac.uk</a></b><br>
+       Postdoctoral researcher<br>
+       University College London (UCL)<br>
+       London, United Kingdom</p>
+    <div class="social-icons">
+      <a href="https://scholar.google.com/citations?user=Yhsglh4AAAAJ&" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://www.linkedin.com/in/kfu-hellstrom/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/FrHellstrom" target="_blank" title="X (Twitter)">
+        <svg class="x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
+        </svg>
+      </a>
     </div>
-    <!-- /.container -->
+  </div>
+</header>
 
-    <!-- Other people may like it too! -->
 
-</body>
 
+
+<section>
+
+        <p>My research is focused on statistical learning theory and machine learning. In particular, I work on generalization bounds (in particular of the information-theoretic variety); the application of such bounds to neural networks and meta learning; conformal prediction; and online learning and active learning.</p>
+
+        <p> I am currently a postdoc at University College London Centre for Artificial Intelligence, advised by Benjamin Guedj and supported by <a href="https://wasp-sweden.org/">WASP</a>.
+            Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.</p>
+
+        
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="arxiv-icon" viewBox="0 0 448 512">
+    <path fill="currentColor" d="M62.258 8.006a22.22 22.22 0 0 0-20.929 13.448c-3.404 8.169-.96 13.898 6.506 24.59c10.935 16.09 122.178 149.673 122.178 149.673l-24.619 23.038c-20.74 20.735-21.632 48.566-2.34 67.852l28.663 27.3l-79.976 98.235c-6.21 6.614-10.053 18.221-6.585 26.552a22.7 22.7 0 0 0 21.21 14.06a20.23 20.23 0 0 0 15.249-7.536l95.122-88.437L363.33 496.39a27.14 27.14 0 0 0 18.418 7.61a25.3 25.3 0 0 0 7.335-1.108a27.66 27.66 0 0 0 18.4-18.99a25.6 25.6 0 0 0-6.481-23.69L272.219 305.195l23.062-21.443c17.198-15.504 17.29-42.455.197-58.076l-25.257-24.228L357.417 98.46l.115-.133l.103-.14c7.793-10.123 11.52-17.92 7.502-27.806a36.17 36.17 0 0 0-23.647-18.37a24 24 0 0 0-3.166-.212l-.006.018a28.52 28.52 0 0 0-18.252 8.123l-.203.166l-.19.173L218.6 151.925L79.261 18.253S70.995 8.213 62.258 8.006m276.06 51.214q1.115.004 2.22.148a29.3 29.3 0 0 1 17.719 13.81c2.246 5.523 1.554 10.01-6.506 20.484L264.861 196.3l-40.882-39.22l100.68-91.304a21.77 21.77 0 0 1 13.66-6.536zM175.077 201.127L395.19 464.872c4.32 5.408 7.02 10.818 5.18 16.914a20.25 20.25 0 0 1-13.463 14.037a17.6 17.6 0 0 1-5.17.784a19.8 19.8 0 0 1-13.293-5.56l-220.15-209.694c-17.317-17.316-14.698-40.33 2.158-57.186z"/>
+  </symbol>
+  <symbol id="ieee-icon" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M4.74 14.973h-.05v-.064h.04c.022 0 .051.002.051.03s-.015.034-.04.034zm.101-.03c0-.06-.04-.079-.109-.079h-.099v.265h.057v-.111h.027l.061.111h.068l-.069-.116c.036-.003.064-.02.064-.07m-.11.243c-.098 0-.176-.076-.176-.19c0-.113.078-.188.176-.188c.095 0 .177.075.177.188c0 .114-.082.19-.177.19m-.247-.19c0 .156.116.247.247.247c.13 0 .247-.09.247-.247a.24.24 0 0 0-.247-.246a.24.24 0 0 0-.247.246M3.35 12.61c-.02.374-.025.72-.052 1.096c.148.013.315.026.473.003l-.047-1.046l-.009-.05c-.12.005-.234.01-.365-.003m-.926-1.051c-.182.091-.45.23-.421.48c.04.136.187.224.304.28c.647.286 1.506.295 2.19.083c.168-.065.395-.16.426-.366c-.002-.171-.183-.279-.313-.344v-.008a.6.6 0 0 1 .144-.039v-.004c-.228-.041-.45-.101-.671-.16c.043.097.073.2.109.301q.1-.033.207-.047c.117.045.284.11.3.256c.014.137-.136.204-.23.26c-.501.181-1.065.2-1.588.06c-.144-.045-.353-.103-.37-.287c.102-.242.367-.292.588-.351c-.114-.073-.23-.138-.34-.22c-.119.007-.227.059-.335.106m1.107-1.46l-.064.208l-.326.932c.082.008.183 0 .263.008v.008l-.048 1.054l.008.01c.104.01.234.016.34-.002V12.3l-.042-1.022l.006-.035l.286-.004a47 47 0 0 1-.414-1.14zm-.15-.469c.239-.163.453.065.639.195c.717.578 1.393 1.238 1.909 1.984c.065.096.094.246.036.355c-.134.223-.314.426-.485.633v.011c-.426.454-.876.92-1.363 1.305c-.237.144-.455.46-.761.264a11 11 0 0 1-1.927-1.82c-.096-.149-.246-.271-.312-.44c-.093-.23.112-.394.229-.566c.576-.71 1.291-1.407 2.034-1.92zm.6-.678l-.266-.376c-.032-.02-.073-.052-.108-.062c-.079-.034-.163.007-.227.056l-.48.624c-.769.953-1.68 1.843-2.673 2.525c-.079.061-.195.121-.22.222c-.026.091.022.166.078.223a13 13 0 0 1 2.234 1.94c.12.127.217.252.335.37c.198.265.43.53.613.813c.057.06.066.158.156.187c.07.024.156.04.223 0l.066-.067a13.3 13.3 0 0 1 3.034-3.06c.117-.103.34-.142.343-.336a.3.3 0 0 0-.137-.226l-.02-.003c-.6-.408-1.159-.87-1.686-1.394l-.582-.609a17 17 0 0 1-.684-.827zm.039.672c.206.157.42.336.61.518l.034.02a10 10 0 0 1 1.405 1.592c.065.1.122.212.086.343c-.133.332-.403.597-.639.887c-.51.55-1.05 1.081-1.652 1.506c-.122.086-.287.166-.433.097c-.444-.232-.818-.613-1.207-.96c-.45-.417-.902-.904-1.244-1.413a.4.4 0 0 1-.064-.253c.044-.176.165-.32.279-.469c.403-.514.897-1.002 1.397-1.447c.011-.012.032-.036.05-.047c.215-.186.428-.35.652-.511c.234-.182.529-.031.726.137m15.942-.197H24v1.028h-2.569v1.094h2.364v1.028H21.43V13.7H24v1.028h-4.038zm-4.859 0h4.037v1.028h-2.57v1.094h2.363v1.028H16.57V13.7h2.569v1.028h-4.037zm-4.86 0h4.037v1.028h-2.57v1.094h2.365v1.028H11.71V13.7h2.57v1.028h-4.038zm-2.24 0h1.469v5.301H8.004Z"/>
+  </symbol>
+</svg>
+
+<style>
+  .icon-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+  .icon-link:hover {
+    color: #FF8C00;
+  }
+  .icon-link svg, .icon-link .fas, .icon-link .fab {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+  }
+</style>
+
+<h2>Preprints</h2>
+
+<ul>
+  <li><strong>Generalization Bounds: Perspectives from Information Theory and PAC-Bayes</strong><br>
+            Fredrik Hellström, Giuseppe Durisi, Benjamin Guedj, Maxim Raginsky. <i>Preprint, 2023</i>. 
+            <a href="https://arxiv.org/abs/2309.04381" class="icon-link" title="arXiv">
+              <svg><use href="#arxiv-icon"/></svg>
+            </a>
+  </li>
+</ul>
+
+<h2>Conference and journal papers</h2>
+
+<ul>
+  <li><strong>Generalization and Informativeness of Conformal Prediction</strong><br>
+                Matteo Zecchin, Sangwoo Park, Osvaldo Simeone, Fredrik Hellström. <i>ISIT, 2024</i>. 
+                <a href="https://arxiv.org/abs/2401.11810" class="icon-link" title="arXiv">
+                  <svg><use href="#arxiv-icon"/></svg>
+                </a>
+  </li>
+  <li><strong>Comparing Comparators in Generalization Bounds</strong><br>
+              Fredrik Hellström, Benjamin Guedj. <i>AISTATS, 2024</i>. 
+              <a href="https://arxiv.org/abs/2310.10534" class="icon-link" title="arXiv">
+                <svg><use href="#arxiv-icon"/></svg>
+              </a> 
+              <a href="https://virtual.aistats.org/virtual/2024/poster/6593" class="icon-link" title="AISTATS"><i class="fas fa-chalkboard-user"></i></a>
+  </li>
+          <li><strong>Adaptive Selective Sampling for Online Prediction with Experts</strong><br>
+                    Rui M. Castro, Fredrik Hellström, Tim van Erven. <i>NeurIPS 2023</i>. 
+                    <a href="https://arxiv.org/abs/2302.08397" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                    <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                    <a href="https://neurips.cc/virtual/2023/poster/72851" title="Video"><i class="icon-link" class="fas fa-video"></i></a></li>
+          <li><strong>Evaluated CMI Bounds for Meta Learning: Tightness and Expressiveness</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>. 
+                  <a href="https://arxiv.org/abs/2210.06511" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/824c9b06e0b21b2a8bb74fcc8a558be4-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                  <a href="https://slideslive.com/38990218/evaluated-cmi-bounds-for-meta-learning-tightness-and-expressiveness?ref=speaker-112652" class="icon-link" title="Video"><i class="fas fa-video"></i></a></li>
+          <li><strong>New Family of Generalization Bounds Using Samplewise Evaluated CMI</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>NeurIPS 2022</i>. 
+                  <a href="https://arxiv.org/abs/2210.06422" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/41b6674c28a9b93ec8d22a53ca25bc3b-Abstract-Conference.html" class="icon-link" title="NeurIPS"><i class="fas fa-chalkboard-user"></i></a> 
+                  <a href="https://slideslive.com/38990222/a-new-family-of-generalization-bounds-using-samplewise-evaluated-cmi?ref=speaker-112652" class="icon-link"  title="Video"><i class="fas fa-video"></i></a></li>
+          <li><strong>Fast-rate loss bounds via conditional information measures with applications to neural networks</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2021</i>. 
+                  <a href="https://arxiv.org/abs/2010.11552" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://ieeexplore.ieee.org/document/9517731" class="icon-link" title="IEEE"><svg><use href="#ieee-icon"/></svg></a></li>
+          <li><strong>Generalization bounds via information density and conditional information density</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>JSAIT 2020</i>. 
+                  <a href="https://arxiv.org/abs/2005.08044" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://ieeexplore.ieee.org/document/9277617" class="icon-link" title="IEEE"><svg><use href="#ieee-icon"/></svg></a></li>
+          <li><strong>Generalization error bounds via <i>m</i>th central moments of the information density</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i>ISIT 2020</i>. 
+                  <a href="https://arxiv.org/abs/2004.09148" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://ieeexplore.ieee.org/abstract/document/9174475" class="icon-link" title="IEEE"><svg><use href="#ieee-icon"/></svg></a></li>
+          <li><strong>New constraints on inelastic dark matter from IceCube</strong><br>
+                  Riccardo Catena, Fredrik Hellström. <i>JCAP 2018</i>. 
+                  <a href="https://arxiv.org/abs/1808.08082" class="icon-link" title="arXiv"><svg><use href="#arxiv-icon"/></svg></a> 
+                  <a href="https://iopscience.iop.org/article/10.1088/1475-7516/2018/10/039" class="icon-link" class="icon-link" title="IOP"><i class="fas fa-book"></i></a></li>
+        </ul>
+
+        <h2>Other</h2>
+
+        <ul>
+          <li><strong>Information-Theoretic Generalization Bounds: Tightness and Expressiveness</strong><br>
+                    Fredrik Hellström. <i>PhD Thesis, 2023</i>. 
+                    <a href="https://research.chalmers.se/en/publication/533822" class="icon-link" title="Available"><i class="fas fa-file-alt"></i></a>
+          </li>
+          <li><strong>Data-Dependent PAC-Bayesian Bounds in the Random-Subset Setting with Applications to Neural Networks</strong><br>
+                  Fredrik Hellström, Giuseppe Durisi. <i> Workshop on Information-Theoretic Methods for Rigorous, Responsible, and Reliable Machine Learning (ITR3) at ICML 2021</i>. 
+                  <a href="files\data-dependent-pac-bayesian-bounds-in-the-random-subset-setting.pdf" class="icon-link" title="Available"><i class="fas fa-file-alt"></i></a>
+          </li>
+          <li><strong>Machine Learning, Compression, and Understanding</strong><br>
+                  Fredrik Hellström. <i> Popular science presentation. </i> 
+                  <a href="https://www.youtube.com/watch?v=1FiPrjR5WpM" class="icon-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </li>
+        </ul>
+
+      </section>
+      <footer>
+        <p style=color:#D3D3D3><small>Based on a theme by <a style=color:#DABDAB; href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
 </html>
