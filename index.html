@@ -460,18 +460,25 @@
     <script>
         let lastScrollTop = 0;
         const toggleButton = document.getElementById('dark-mode-toggle');
+        const hideThreshold = 50; // Adjust this value if needed
 
         window.addEventListener("scroll", function() {
             let currentScroll = window.scrollY;
-            if (currentScroll > lastScrollTop) {
-                // Hide when scrolling down
+
+            if (currentScroll < hideThreshold) {
+                // Keep the toggle visible if within the first 50 pixels
+                toggleButton.style.opacity = "1";
+                toggleButton.style.pointerEvents = "auto";
+            } else if (currentScroll > lastScrollTop) {
+                // Hide when scrolling down beyond the threshold
                 toggleButton.style.opacity = "0";
-                toggleButton.style.pointerEvents = "none"; // Prevent accidental clicks
+                toggleButton.style.pointerEvents = "none";
             } else {
                 // Show when scrolling up
                 toggleButton.style.opacity = "1";
                 toggleButton.style.pointerEvents = "auto";
             }
+
             lastScrollTop = currentScroll;
         });
     </script>
