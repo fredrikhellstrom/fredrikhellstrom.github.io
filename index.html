@@ -6,6 +6,7 @@
     <title>Fredrik Hellström</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #fffaf2;
@@ -16,6 +17,9 @@
             padding: 20px;
             transition: background-color 0.3s, color 0.3s;
         }
+        
+
+
         .page-content {
             display: flex;
             gap: 40px;
@@ -417,12 +421,36 @@
         const body = document.body;
         const icon = darkModeToggle.querySelector('i');
 
-        darkModeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
+        // Check user preference from local storage or system settings
+        function applyDarkModePreference() {
+            const storedPreference = localStorage.getItem('dark-mode');
+            if (storedPreference === "dark") {
+                body.classList.add("dark-mode");
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else if (storedPreference === "light") {
+                body.classList.remove("dark-mode");
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                body.classList.add("dark-mode");
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            }
+        }
+
+        // Apply dark mode preference on load
+        applyDarkModePreference();
+
+        // Toggle dark mode when the button is clicked
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("dark-mode", "dark");
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
             } else {
+                localStorage.setItem("dark-mode", "light");
                 icon.classList.remove('fa-sun');
                 icon.classList.add('fa-moon');
             }
