@@ -128,7 +128,7 @@
             font-size: 24px;
             cursor: pointer;
             z-index: 1000;
-            transition: color 0.44s;
+             transition: color 0.44s, opacity 0.3s ease-in-out; 
         }
         #dark-mode-toggle:hover {
             color: #FF8C00;
@@ -457,5 +457,23 @@
         });
     </script>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        const toggleButton = document.getElementById('dark-mode-toggle');
+
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.scrollY;
+            if (currentScroll > lastScrollTop) {
+                // Hide when scrolling down
+                toggleButton.style.opacity = "0";
+                toggleButton.style.pointerEvents = "none"; // Prevent accidental clicks
+            } else {
+                // Show when scrolling up
+                toggleButton.style.opacity = "1";
+                toggleButton.style.pointerEvents = "auto";
+            }
+            lastScrollTop = currentScroll;
+        });
+    </script>
   </body>
 </html>
