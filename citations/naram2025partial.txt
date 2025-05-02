@@ -1,0 +1,8 @@
+@inproceedings{naram2025partial,
+  author = {Jayadev Naram and Fredrik Hellström and Ziming Wang and Rebecka Jörnsten and Giuseppe Durisi},
+  title = {Theoretical Performance Guarantees for Partial Domain Adaptation via Partial Optimal Transport},
+  booktitle = {Proceedings of the International Conference in Machine Learning (ICML)},
+  year = {2025},
+  month = {July},
+  address = {Vancouver, Canada}
+}

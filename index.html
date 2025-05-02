@@ -177,19 +177,25 @@
         }
 
         .now-outer {
-            fill: #111; /* Dark in light mode */
-            transition: fill 0.2s ease-in-out;
+            color: #111; /* dark circle in light mode */
+            transition: color 0.2s ease-in-out;
         }
 
         .now-inner {
-            fill: #4CAF50; /* Green */
-            transition: fill 0.2s ease-in-out;
+            color: #4CAF50; /* green inner circle by default */
+            transition: color 0.2s ease-in-out;
+        }
+
+        /* Hover effect: inner circle turns orange */
+        .icon-link:hover .now-inner {
+            color: #FF8C00;
         }
 
         /* Dark mode adjustments */
         .dark-mode .now-outer {
-            fill: #f0f0f0; /* Light in dark mode */
+            color: #f0f0f0; /* light outer circle in dark mode */
         }
+
 
     </style>
 </head>
@@ -204,9 +210,7 @@
                 <div class="profile-photo-container">
                     <img src="files/profiletransp.png" alt="Fredrik Hellström" class="profile-photo">
                 </div>
-                <p><b><a style="color:#FF8C00;" href="mailto:f.hellstrom@ucl.ac.uk">f.hellstrom&#9917;ucl.ac.uk</a></b><br>
-                   Postdoctoral researcher<br>
-                   University College London (UCL)<br>
+                <p><b><a style="color:#FF8C00;" href="mailto:kfuhellstrom@gmail.com">kfuhellstrom&#9917;gmail.com</a></b><br>
                    London, United Kingdom</p>
                 <div class="social-icons">
 
@@ -224,9 +228,9 @@
         <main class="publications-section">
 <section>
 
-        <p>My research is focused on statistical learning theory and machine learning. This includes generalization bounds (mainly of the information-theoretic variety); the application of such bounds in various settings; conformal prediction; online learning; and active learning.</p>
+        <p>My research has focused on statistical learning theory and machine learning. This includes generalization bounds (e.g. information-theoretic); the application of such bounds in various settings; conformal prediction; online learning; active learning; and domain adaptation.</p>
 
-        <p> I am currently a postdoc at the University College London Centre for Artificial Intelligence, advised by <a style="color:#FF8C22;" href="https://bguedj.github.io/">Benjamin Guedj</a> and supported by <a style="color:#FF8C22;" href="https://wasp-sweden.org/">WASP</a>.
+        <p>I was previously a postdoc at the University College London Centre for Artificial Intelligence, advised by <a style="color:#FF8C22;" href="https://bguedj.github.io/">Benjamin Guedj</a> and supported by <a style="color:#FF8C22;" href="https://wasp-sweden.org/">WASP</a>.
             Prior to this, I completed my PhD at Chalmers University of Technology as part of the WASP Graduate School AI-track, supervised by <a style="color:#FF8C22;" href="https://gdurisi.github.io/">Giuseppe Durisi</a>, and studied Physics at the University of Gothenburg.</p>
         
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -257,19 +261,13 @@
   }
 </style>
 
+<!--
 <h2>Preprints</h2>
 
 <ul>
-  <li><strong>Generalization and Informativeness of Weighted Conformal Risk Control Under Covariate Shift</strong><br>
-            Matteo Zecchin, Fredrik Hellström, Sangwoo Park, Shlomo Shamai (Shitz), Osvaldo Simeone. <br>
-            <i>Preprint, 2025</i>. <a href="https://arxiv.org/abs/2501.11413" class="icon-link" title="arXiv">
-              <svg><use href="#arxiv-icon"/></svg>
-            </a>
-            <a href="citations/zecchin2025generalization.txt" class="icon-link" title="Text file with BibTeX citation">
-                <i class="fas fa-quote-right"></i>
-            </a>
-  </li>
+  
 </ul>
+-->
 
 <h2>Book</h2>
 
@@ -281,8 +279,8 @@
             </a>
             <a href="https://www.nowpublishers.com/article/Details/MAL-112" class="icon-link" title="now publishers">
                 <svg viewBox="0 0 24 24" width="16" height="16">
-                    <circle class="now-outer" cx="12" cy="12" r="11" />
-                    <circle class="now-inner" cx="12" cy="12" r="6" />
+                    <circle class="now-outer" cx="12" cy="12" r="11" fill="currentColor" />
+                    <circle class="now-inner" cx="12" cy="12" r="6" fill="currentColor" />
                 </svg>
             </a>
             <a href="citations/hellstrom2025generalization.txt" class="icon-link" title="Text file with BibTeX citation">
@@ -295,6 +293,25 @@
 <h2>Conference and journal papers</h2>
 
 <ul>
+  <li><strong>Theoretical Performance Guarantees for Partial Domain Adaptation via Partial Optimal Transport</strong><br>
+            Jayadev Naram, Fredrik Hellström, Ziming Wang, Rebecka Jörnsten, Giuseppe Durisi. <br>
+            <i>ICML, 2025</i>. <!--<a href="https://arxiv.org/abs/xxxxx.xxxxx" class="icon-link" title="arXiv">
+              <svg><use href="#arxiv-icon"/></svg>
+            </a>
+            -->
+            <a href="citations/naram2025partial.txt" class="icon-link" title="Text file with BibTeX citation">
+                <i class="fas fa-quote-right"></i>
+            </a>
+  </li>
+  <li><strong>Generalization and Informativeness of Weighted Conformal Risk Control Under Covariate Shift</strong><br>
+            Matteo Zecchin, Fredrik Hellström, Sangwoo Park, Shlomo Shamai (Shitz), Osvaldo Simeone. <br>
+            <i>ISIT, 2025</i>. <a href="https://arxiv.org/abs/2501.11413" class="icon-link" title="arXiv">
+              <svg><use href="#arxiv-icon"/></svg>
+            </a>
+            <a href="citations/zecchin2025generalization.txt" class="icon-link" title="Text file with BibTeX citation">
+                <i class="fas fa-quote-right"></i>
+            </a>
+  </li>
   <li><strong>Generalization and Informativeness of Conformal Prediction</strong><br>
                 Matteo Zecchin, Sangwoo Park, Osvaldo Simeone, Fredrik Hellström. <br>
                 <i>ISIT, 2024</i>. <a href="https://arxiv.org/abs/2401.11810" class="icon-link" title="arXiv">
